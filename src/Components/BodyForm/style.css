@@ -1,0 +1,145 @@
+form {
+  margin: 10px 50px 0 50px;
+}
+
+h1 {
+  font-family: "DM Sans", sans-serif;
+  color: rgb(36, 36, 207);
+  text-align: center;
+  margin-top: 10px;
+}
+
+label,
+input,
+select,
+textarea {
+  display: flex;
+}
+
+label {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+input,
+select,
+textarea {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: "DM Sans", sans-serif;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+select {
+  width: 80%;
+}
+
+input,
+select,
+option {
+  height: 45px;
+}
+
+textarea {
+  height: 50%;
+}
+
+input,
+select :focus {
+  outline: none;
+}
+
+.row-form {
+  display: flex;
+}
+
+.column-form {
+  display: block;
+  flex-direction: column;
+  position: relative;
+}
+
+.box1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 1em;
+}
+.box1 input {
+  width: 100%;
+}
+
+.box2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 1em;
+}
+
+.box2 textarea {
+  width: 100%;
+}
+
+.box3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 1em;
+}
+
+.box3 select {
+  width: 100%;
+}
+
+.box3 input {
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(36, 36, 207);
+  color: white;
+  left: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b8e81c;
+}
+
+.btn {
+  justify-content: end;
+  padding-right: 30px;
+  margin-top: 40px;
+}
+
+.alert {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #2b276f;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade {
+  opacity: 1;
+}
